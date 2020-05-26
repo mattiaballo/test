@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+    <link rel="stylesheet" href="/build/lesson-test.css" />
+    <script type="module" src="/build/lesson-test.esm.js"></script>
+    <script nomodule src="/build/lesson-test.js"></script>
+  </head>
+  <body>
+    <simple-label></simple-label>
+    <label class="simple-label">Not a Simple label</label>
+    <mohole-title title-string="il mio titolo che si vede"></mohole-title>
+    <button class="pure-button pure-button-primary">A Primary Button</button>
+    <slot-paragraph>
+      <ul>
+        <li>first</li>
+        <li>second</li>
+      </ul>
+    </slot-paragraph>
+    <named-slot-paragraph>
+      <label slot="first">This label is in the first slot</label>
+      <label slot="second">This label is in the second slot</label>
+    </named-slot-paragraph>
+    <buttons-wrapper></buttons-wrapper>
+    <img-sample></img-sample>
+    <bg-sample></bg-sample>
+  </body>
+</html>
